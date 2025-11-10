@@ -8,10 +8,52 @@
 </head>
 <body>
   {% include 'navbar.html' %}
+
   <main class="content">
-    <section class="page">
+    <section class="projects-section">
       <h1>Projects</h1>
-      <p>여기에 프로젝트 목록을 추가할 예정입니다.</p>
+      <div class="projects-grid">
+
+        <!-- 프로젝트 카드 1 -->
+        <div class="project-card">
+          <img src="/static/project1.png" alt="감정 가계부 써슈" />
+          <div class="overlay">
+            <h2>감정 가계부 써슈</h2>
+            <p>Django 기반 감정 가계부 서비스로, 사용자의 감정 상태와 지출 내역을 함께 기록할 수 있는 웹 애플리케이션입니다.</p>
+            <p>JWT 기반 로그인 및 회원 인증 기능을 직접 구현하였으며, 보안성과 확장성을 고려한 백엔드 구조를 설계했습니다.</p>
+          </div>
+        </div>
+
+        <!-- 프로젝트 카드 2 -->
+        <div class="project-card">
+          <img src="/static/project2.png" alt="MEGABOX" />
+          <div class="overlay">
+            <h2>MEGABOX</h2>
+            <p>FastAPI 기반의 영화관 운영 관리 시스템으로, 직원 근태 및 급여 정산 기능을 포함한 내부 관리 도구입니다.</p>
+            <p>프로젝트의 PM 역할을 맡아 전체 일정 및 기능 설계를 주도하였으며, 근태시간 계산 및 급여 자동화 로직을 직접 구현했습니다.</p>
+          </div>
+        </div>
+
+        <!-- 프로젝트 카드 3 -->
+        <div class="project-card">
+          <img src="/static/project3.jpg" alt="CJCUS" />
+          <div class="overlay">
+            <h2>CJCUS</h2>
+            <p>C# Windows Form 기반의 관세 업무 자동화 프로그램으로, 다수 거래명세서를 기업별 형식에 맞게 자동 처리합니다.</p>
+            <p>엑셀 데이터를 검사하여 필요한 값을 추출하고, 메일로 자동 발송하는 시스템을 구현하여 업무 효율을 크게 향상시켰습니다.</p>
+          </div>
+        </div>
+
+        <!-- 프로젝트 카드 4 -->
+        <div class="project-card">
+          <img src="/static/project4.png" alt="FOCUZ" />
+          <div class="overlay">
+            <h2>FOCUZ</h2>
+            <p>Django 기반의 업무 효율화 애플리케이션으로, 팀별 업무 데이터를 체계적으로 관리할 수 있도록 설계되었습니다.</p>
+            <p>사용자 인증, 권한 관리, 데이터 시각화 기능을 구현하였으며, 유지보수성과 확장성을 고려한 백엔드 아키텍처를 설계했습니다.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 </body>

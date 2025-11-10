@@ -8,10 +8,27 @@
 </head>
 <body>
   {% include 'navbar.html' %}
-  <main class="content">
-    <section class="page">
-      <h1>About</h1>
-      <p>여기에 자기소개 내용을 추가할 예정입니다.</p>
+
+  <main class="content about-section">
+    <section class="about-container">
+      <h1>About Me</h1>
+
+      <p class="about-intro">
+        안녕하세요, 백엔드 개발자 <strong>한율</strong>입니다.<br/>
+        효율적인 구조와 명확한 로직을 고민하며, 안정적인 서비스를 만드는 것을 목표로 합니다.
+      </p>
+
+      <h2>기술 스택</h2>
+      <ul class="about-list">
+        <li><strong>Languages:</strong> Python, C#, HTML, CSS, JavaScript, Java</li>
+        <li><strong>Frameworks:</strong> Django, FastAPI, Flask</li>
+        <li><strong>Database:</strong> MySQL, SQLite, Postgresql</li>
+      </ul>
+
+      <div class="about-buttons">
+        <a href="/projects" class="btn-about">프로젝트 확인하기</a>
+        <a href="/resume" class="btn-about">이력서 확인하기</a>
+      </div>
     </section>
   </main>
 </body>

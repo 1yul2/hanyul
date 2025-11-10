@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume | Hanyul Portfolio</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  {% include 'navbar.html' %}
+  <main class="content resume-section">
+    <h1>Resume Download</h1>
+    <p>비밀번호를 입력하시면 이력서를 다운로드할 수 있습니다.</p>
+
+    <form method="post" class="resume-form">
+      <input type="password" name="password" placeholder="비밀번호 입력" required />
+      <button type="submit">다운로드</button>
+    </form>
+
+    {% if error %}
+    <p class="error-message">{{ error }}</p>
+    {% endif %}
+  </main>
+</body>
+</html>
