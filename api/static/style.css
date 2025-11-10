@@ -140,6 +140,15 @@ body {
   gap: 60px;
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: nowrap; /* ✅ 오른쪽으로 고정 (줄바꿈 방지) */
+}
+
 /* 문의 폼 */
 .contact-form {
   flex: 0 0 600px; /* 고정 폭으로 넓이 조절 */
@@ -208,6 +217,7 @@ body {
 
 /* 연락처 */
 .contact-info {
+  flex: 0 0 300px;
   width: 300px;
   background: #fff;
   padding: 40px 35px;
