@@ -1,0 +1,59 @@
+# ---- Python 기본 ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.pyc
+*$py.class
+
+# ---- 가상환경 ----
+venv/
+.env/
+env/
+.venv/
+
+# ---- 환경 변수 파일 ----
+.env
+*.env
+
+# ---- FastAPI / Starlette ----
+*.db
+instance/
+*.sqlite3
+
+# ---- VSCode / PyCharm 설정 ----
+.vscode/
+.idea/
+
+# ---- macOS & 시스템 ----
+.DS_Store
+Thumbs.db
+
+# ---- 로그 및 캐시 ----
+*.log
+*.pot
+*.pyc
+.cache/
+coverage/
+htmlcov/
+pytest_cache/
+__snapshots__/
+
+# ---- 배포 관련 ----
+.vercel/
+build/
+dist/
+*.egg-info/
+*.spec
+
+# ---- Static 빌드 산출물 ----
+api/static/*.map
+api/static/*.tmp
+api/static/*.bak
+
+# ---- 노트북 체크포인트 ----
+.ipynb_checkpoints/
+
+# ---- 기타 ----
+*.swp

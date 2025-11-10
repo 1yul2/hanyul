@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Hanyul Portfolio</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- 상단 네비게이션 바 -->
+  <header class="navbar">
+    <div class="nav-left">
+      <h1 class="logo">HANYUL</h1>
+      <nav class="menu">
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/about">About</a>
+        <a href="/contact" class="active">Contact</a>
+      </nav>
+    </div>
+    <div class="nav-right"></div>
+  </header>
+
+  <main class="content contact-page">
+    <h2 class="contact-title">Contact</h2>
+    <div class="contact-layout">
+      <!-- 왼쪽: 문의 폼 -->
+      <div class="contact-form">
+        <h3>문의하기</h3>
+        <form>
+          <label for="name">성명</label>
+          <input type="text" id="name" name="name" placeholder="성명" required />
+
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" placeholder="이메일" required />
+
+          <label for="message">메시지</label>
+          <textarea id="message" name="message" rows="6" placeholder="메시지를 입력하세요" required></textarea>
+
+          <button type="submit" class="btn-send">메시지 보내기</button>
+        </form>
+      </div>
+
+      <!-- 오른쪽: 연락처 -->
+      <div class="contact-info">
+        <h3>연락처</h3>
+        <div class="info-item">
+          <span class="icon">📍</span>
+          <p>{{ contact_location }}</p>
+        </div>
+        <div class="info-item">
+          <span class="icon">✉️</span>
+            <p><a href="mailto:{{ contact_email }}">{{ contact_email }}</a></p>
+        </div>
+        <p class="info-note">
+          📬 귀하의 메시지는 답변에만 사용되며,<br />
+          저장하거나 공유되지 않습니다.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

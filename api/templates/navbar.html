@@ -1,0 +1,12 @@
+<header class="navbar">
+  <div class="nav-left">
+    <h1 class="logo">HANYUL</h1>
+    <nav class="menu">
+      <a href="/" class="{{ 'active' if request.url.path == '/' else '' }}">Home</a>
+      <a href="/projects" class="{{ 'active' if request.url.path == '/projects' else '' }}">Projects</a>
+      <a href="/about" class="{{ 'active' if request.url.path == '/about' else '' }}">About</a>
+      <a href="/contact" class="{{ 'active' if request.url.path == '/contact' else '' }}">Contact</a>
+    </nav>
+  </div>
+  <div class="nav-right"></div>
+</header>

@@ -1,0 +1,259 @@
+/* 기본 스타일 */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #222;
+  background: #f9fafb;
+}
+
+/* 상단 네비게이션 바 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1b2a;
+  color: white;
+  padding: 22px 90px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* 왼쪽 영역: 로고 + 메뉴 */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* 메뉴 */
+.menu {
+  display: flex;
+  gap: 36px;
+}
+
+.menu a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #fff;
+  border-bottom: 3px solid #00aaff;
+  padding-bottom: 4px;
+}
+
+/* made by 수현_조교님 */
+.nav-right {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-image: url('/static/profile.jpg');
+    background-position: center 7%;
+    background-size: cover;
+    border: 1px solid #171856;
+}
+
+/* 본문 영역 */
+.content {
+  max-width: 1000px;
+  margin: 90px auto;
+  padding: 0 32px;
+}
+
+.content h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.content p {
+  line-height: 1.8;
+  color: #444;
+  font-size: 16px;
+}
+
+/* 인트로 섹션 */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  animation: fadeInUp 1.2s ease;
+}
+
+.intro h1 {
+  font-size: 72px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #0d1b2a;
+  letter-spacing: 1px;
+}
+
+.intro h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #011738;
+  margin-bottom: 40px;
+}
+
+.intro p {
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #333;
+  white-space: pre-line;
+}
+/* Contact Page */
+.contact-page {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+/* 레이아웃 */
+.contact-layout {
+  display: flex;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* 문의 폼 */
+.contact-form {
+  flex: 0 0 600px; /* 고정 폭으로 넓이 조절 */
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.contact-form h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 25px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d0d7e2;
+  border-radius: 6px;
+  background: #f9fafc;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0d1b2a;
+  box-shadow: 0 0 4px rgba(13,27,42,0.3);
+  background: #fff;
+}
+
+/* 버튼 */
+.btn-send {
+  background: #0d1b2a;
+  color: #fff;
+  border: none;
+  padding: 13px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.25s ease;
+  align-self: flex-start;
+}
+
+.btn-send:hover {
+  background: #1b3b6f;
+  transform: translateY(-1px);
+}
+
+/* 연락처 */
+.contact-info {
+  width: 300px;
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.contact-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.info-item a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+.info-note {
+  font-size: 13px;
+  color: #666;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/* 자연스러운 등장 애니메이션 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
